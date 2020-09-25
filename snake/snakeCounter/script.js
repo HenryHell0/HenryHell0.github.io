@@ -6,6 +6,7 @@ var ypos = 9;
 var xvelo = 0;
 var yvelo = 0;
 var isPaused = false;
+var score = 0;
 var appleX = Math.floor(Math.random() * 20);
 var appleY = Math.floor(Math.random() * 20);
 var tail = [{x:0, y:0}, {x:20, y:20}, {x:20, y:20}, {x:20, y:20}, {x:20, y:20}, {x:20, y:20}];
@@ -114,6 +115,8 @@ function gameInterval(){
 			makeApple(appleX, appleY)
 			xvelo = 0;
 			yvelo = 0;
+			score = 0;
+			document.getElementById("score").innerHTML = score;
 		}
 	}
 
@@ -122,6 +125,8 @@ function gameInterval(){
 		appleY = Math.floor(Math.random() * 20);
 		tail.unshift({x:20, y:20});
 		frameLagFix();
+		score++;
+		document.getElementById("score").innerHTML = score;
 	}
 	if (xpos <= -1) {
 		xvelo = -1;
