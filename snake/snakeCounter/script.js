@@ -7,7 +7,6 @@ var xvelo = 0;
 var yvelo = 0;
 var isPaused = false;
 var score = 0;
-var scorePrev = 0;
 var appleX = Math.floor(Math.random() * 20);
 var appleY = Math.floor(Math.random() * 20);
 var tail = [{x:0, y:0}, {x:20, y:20}, {x:20, y:20}, {x:20, y:20}, {x:20, y:20}, {x:20, y:20}];
@@ -116,8 +115,6 @@ function gameInterval(){
 			makeApple(appleX, appleY)
 			xvelo = 0;
 			yvelo = 0;
-			scorePrev = score;
-			document.getElementById("scorePrev").innerHTML = "previous score: " + score;
 			score = 0;
 			document.getElementById("score").innerHTML = score;
 		}
