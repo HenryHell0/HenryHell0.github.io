@@ -117,7 +117,7 @@ function gameInterval(){
 			xvelo = 0;
 			yvelo = 0;
 			scorePrev = score;
-			document.getElementById("scorePrev").innerHTML = "previous score: "score;
+			document.getElementById("scorePrev").innerHTML = "previous score: " + score;
 			score = 0;
 			document.getElementById("score").innerHTML = score;
 		}
