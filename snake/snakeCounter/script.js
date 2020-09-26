@@ -8,6 +8,8 @@ var yvelo = 0;
 var isPaused = false;
 var score = 0;
 var scorePrev = 0;
+import { hello } from "./../script.js";
+var hello2 = hello;
 var appleX = Math.floor(Math.random() * 20);
 var appleY = Math.floor(Math.random() * 20);
 var tail = [{x:0, y:0}, {x:20, y:20}, {x:20, y:20}, {x:20, y:20}, {x:20, y:20}, {x:20, y:20}];
