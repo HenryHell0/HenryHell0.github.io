@@ -95,6 +95,22 @@ function gameInterval(){
 	tail.shift();
 	for (var i = 0; i < tail.length - 1; i++) {
 		makeSnake(tail[i].x, tail[i].y);
+		if (tail[i].x == appleX && tail[i].x == appleY) {
+		appleX = Math.floor(Math.random() * 20);
+		appleY = Math.floor(Math.random() * 20);
+		tail.unshift({x:20, y:20});
+		frameLagFix();
+		score++;
+		document.getElementById("score").innerHTML = score;
+	}
+		if (xpos == appleX && ypos == appleY) {
+		appleX = Math.floor(Math.random() * 20);
+		appleY = Math.floor(Math.random() * 20);
+		tail.unshift({x:20, y:20});
+		frameLagFix();
+		score++;
+		document.getElementById("score").innerHTML = score;
+	}
 		if (tail[i].x == xpos && tail[i].y == ypos) {
 			tail.length = 6;
 			tail[0].x = 20;
@@ -123,14 +139,6 @@ function gameInterval(){
 		}
 	}
 
-	if (xpos == appleX && ypos == appleY) {
-		appleX = Math.floor(Math.random() * 20);
-		appleY = Math.floor(Math.random() * 20);
-		tail.unshift({x:20, y:20});
-		frameLagFix();
-		score++;
-		document.getElementById("score").innerHTML = score;
-	}
 	if (xpos <= -1) {
 		xvelo = -1;
 		yvelo = 0;
