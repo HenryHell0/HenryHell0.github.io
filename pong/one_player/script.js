@@ -103,11 +103,35 @@ function gameTime(){
 		ball.yspeed = ball.yspeed * -1;
 	}
 	if(collide(ball.x, ball.y, ball.width, ball.height, r.x, r.y, r.width, r.height) == true){
+		if (ball.xspeed < 0) {
+			ball.xspeed -= 0.025;
+		}
+		if (ball.xspeed > 0) {
+			ball.xspeed += 0.025;
+		}
+		if (ball.yspeed < 0) {
+			ball.yspeed -= 0.025;
+		}
+		if (ball.yspeed > 0) {
+			ball.yspeed += 0.025;
+		}
 		ball.xspeed = ball.xspeed * -1;
 	}
-	if(collide(ball.x, ball.y, ball.width, ball.height, l.x, l.y, l.width, l.height) == true){
-		ball.xspeed = ball.xspeed * -1;
+	if(collide(ball.x, ball.y, ball.width, ball.height, l.x, l.y, l.width, l.height) == true){	
+		if (ball.xspeed < 0) {
+			ball.xspeed -= 0.025;
 		}
+		if (ball.xspeed > 0) {
+			ball.xspeed += 0.025;
+		}
+		if (ball.yspeed < 0) {
+			ball.yspeed -= 0.025;
+		}
+		if (ball.yspeed > 0) {
+			ball.yspeed += 0.025;
+		}
+		ball.xspeed = ball.xspeed * -1;
+	}
 	if(ball.x >= 20){
 		ball.x = 9;
 		ball.y = 9;
