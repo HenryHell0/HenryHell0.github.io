@@ -128,7 +128,7 @@ function gameTime(){
 		ball.x = 9;
 		ball.y = 9;
 		ball.xspeed = 1;
-		ball.yspeed = Math.floor(Math.random() * 3.50) + 0.1;
+		ball.yspeed = Math.floor(Math.random() * 3.40) + 0.1;
 
 		scoreL++;
 	}
@@ -136,7 +136,7 @@ function gameTime(){
 		ball.x = 9;
 		ball.y = 9;
 		ball.xspeed = 1;
-		ball.yspeed = Math.floor(Math.random() * 3.50) + 0.1;
+		ball.yspeed = Math.floor(Math.random() * 3.40) + 0.1;
 		scoreR++;
 	}
 }
