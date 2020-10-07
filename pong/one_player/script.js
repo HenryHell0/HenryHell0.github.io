@@ -136,14 +136,14 @@ function gameTime(){
 		ball.x = 9;
 		ball.y = 9;
 		ball.xspeed = 1;
-		ball.yspeed = Math.floor(Math.random() * 3.60);
+		ball.yspeed = Math.floor(Math.random() * 3.40) + 0.1;
 		scoreL++;
 	}
 	if (ball.x <= -1) {
 		ball.x = 9;
 		ball.y = 9;
 		ball.xspeed = 1;
-		ball.yspeed = Math.floor(Math.random() * 3.60);
+		ball.yspeed = Math.floor(Math.random() * 3.40) + 0.1;
 		scoreR++;
 	}
 }
