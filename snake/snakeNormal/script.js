@@ -98,8 +98,6 @@ function gameInterval(){
 		appleY = Math.floor(Math.random() * 20);
 		tail.unshift({x:20, y:20});
 		frameLagFix();
-		score++;
-		document.getElementById("score").innerHTML = score;
 	}
 		if (xpos == appleX && ypos == appleY) {
 		appleX = Math.floor(Math.random() * 20);
