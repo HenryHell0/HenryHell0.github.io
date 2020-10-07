@@ -36,10 +36,10 @@ function keyPressed(){
 	if (event.keyCode == 40) {
 		r.y += 3;
 	}
-	if (event.keyCode == 87) {
+	if (event.keyCode == 27) {
 		l.y -= 3;
 	}
-	if (event.keyCode == 83) {
+	if (event.keyCode == 192) {
 		l.y += 3;
 	}
 	if (event.keyCode == 32) {
