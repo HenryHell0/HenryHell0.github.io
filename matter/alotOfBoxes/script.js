@@ -41,7 +41,7 @@ var mouseConstraint = MouseConstraint.create(engine, {
     }
 });
 
-engine.world.gravity.y = 0.5;
+engine.world.gravity.y = 0.25;
 World.add(engine.world, [ stack, mouseConstraint ] );
 Engine.run(engine);
 Render.run(render);
