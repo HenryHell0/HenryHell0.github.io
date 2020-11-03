@@ -30,7 +30,7 @@ Bodies.rectangle(250, 10, 500, 20, { isStatic: true }),
 World.add(engine.world, worldBoundaries);
 
 var stack = Composites.stack(100, 100, 15, 15, 0, 0, function(x, y){
-    return Bodies.rectangle(x, y, 20, 20, { friction: 0, mass: 1, restitution: 0 });
+    return Bodies.rectangle(x, y, 20, 20, { friction: 0, mass: 0, restitution: 0 });
 });
 
 var mouse = Mouse.create(render.canvas);
