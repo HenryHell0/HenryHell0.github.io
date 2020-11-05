@@ -33,7 +33,7 @@ var group = /* FUNCTION TO REMEMBER HOW WORKS --> */Body.nextGroup(true);
 var particleOptions = { friction: 0.00001, collisionFilter: { /*  IMPORTANT PART AHEAD --> */group: group }, render: { visible: false }};
 
 // constraint options for optimal c l o t h
-var constraintOptions = { stiffness: 0.06 };
+var constraintOptions = { stiffness: 0.06, render: { strokeStyle: "lightBlue" } };
 
 // make the cloth using a softbody
 var cloth = Composites.softBody(10, 100, 20, 10, 5, 5, false, 10, particleOptions, constraintOptions);
