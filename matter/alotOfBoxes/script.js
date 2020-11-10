@@ -10,7 +10,9 @@ var Engine = Matter.Engine,
     MouseConstraint = Matter.MouseConstraint;
 
 
-var engine = Engine.create();
+var engine = Engine.create({
+    enableSleeping: true
+});
 var render = Render.create({
     element: document.body,
     engine: engine,
