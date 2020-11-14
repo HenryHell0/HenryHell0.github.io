@@ -2,3 +2,7 @@ body {
     font-family: arial;
     font-size: 30px
 }
+
+button {
+    size: 25px
+}
