@@ -30,10 +30,10 @@ button {
 .matterButton {
     background: #4CAF50;
     /* Green */
-    border: "black";
+/*     border: "black";
     border-width: 1px;
     border-color: black;
-    border-style: solid;
+    border-style: solid; */
     color: white;
     padding: 10px 17px;
     text-align: center;
