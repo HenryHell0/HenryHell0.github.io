@@ -15,7 +15,7 @@ button {
     font-size: 16px;
 }
 
-.button {
+.marginButton {
     background: #4CAF50;
     /* Green */
     border: none;
@@ -25,15 +25,26 @@ button {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+    margin: 1px
 }
 
-.matterButton {
+.backButton {
+    background: #008CBA;
+    /* Blue */
+    border: none;
+    color: white;
+    padding: 10px 17px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 20px
+}
+
+.smallerButton {
     background: #4CAF50;
     /* Green */
-/*     border: "black";
-    border-width: 1px;
-    border-color: black;
-    border-style: solid; */
+    border: none;
     color: white;
     padding: 10px 17px;
     text-align: center;
